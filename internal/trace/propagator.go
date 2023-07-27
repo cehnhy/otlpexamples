@@ -7,7 +7,7 @@ import (
 
 func SetPropagator() {
 	otel.SetTextMapPropagator(propagation.NewCompositeTextMapPropagator(
-			propagation.TraceContext{},
-			propagation.Baggage{},
+		propagation.TraceContext{},
+		propagation.Baggage{},
 	))
 }

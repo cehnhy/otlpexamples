@@ -8,6 +8,8 @@ require (
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.16.0
 	go.opentelemetry.io/otel/sdk v1.16.0
 	go.opentelemetry.io/otel/trace v1.16.0
+	golang.org/x/exp v0.0.0-20230725093048-515e97ebf090
+	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 )
 
 require (

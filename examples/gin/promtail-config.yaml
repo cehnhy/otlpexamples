@@ -1,0 +1,21 @@
+server:
+  disable: true
+
+clients:
+  - url: http://localhost:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: servicea
+    static_configs:
+    - targets:
+        - localhost
+      labels:
+        service: example
+        __path__: examples/gin/servicea.log
+  - job_name: serviceb
+    static_configs:
+    - targets:
+        - localhost
+      labels:
+        service: example
+        __path__: examples/gin/serviceb.log

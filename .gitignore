@@ -1,4 +1,7 @@
 .DS_Stroe
 .vscode/
+__debug_bin
 go.work
 go.work.sum
+*.log
+bin/
