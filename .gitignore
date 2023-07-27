@@ -1,0 +1,4 @@
+.DS_Stroe
+.vscode/
+go.work
+go.work.sum
