@@ -2,9 +2,9 @@
 
 ## Install
 
-+ install [grafana](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/) by docker
-+ install [Jaeger all-in-one](https://www.jaegertracing.io/docs/1.47/deployment/#all-in-one) by docker
-+ install [loki](https://grafana.com/docs/loki/latest/installation/docker/) by docker
++ install [grafana](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/)
++ install [Jaeger all-in-one](https://www.jaegertracing.io/docs/1.47/deployment/#all-in-one)
++ install [loki](https://grafana.com/docs/loki/latest/installation/docker/)
 + install [promtail](https://grafana.com/docs/loki/latest/clients/promtail/installation/) to `./bin/promtail`
 + install [prometheus](https://prometheus.io/docs/prometheus/latest/installation/) with [prometheus-config.yaml](./prometheus-config.yaml)(chage targets)
 

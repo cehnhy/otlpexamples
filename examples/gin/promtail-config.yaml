@@ -10,12 +10,12 @@ scrape_configs:
     - targets:
         - localhost
       labels:
-        service: servicea
+        service: example
         __path__: examples/gin/servicea.log
   - job_name: serviceb
     static_configs:
     - targets:
         - localhost
       labels:
-        service: serviceb
+        service: example
         __path__: examples/gin/serviceb.log
