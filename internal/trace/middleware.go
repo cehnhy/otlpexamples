@@ -12,6 +12,11 @@ import (
 func NewGinMiddleware(traceName string) gin.HandlerFunc {
 	t := otel.Tracer(traceName)
 	return func(c *gin.Context) {
+		if c.FullPath() == "/metrics" {
+			c.Next()
+			return
+		}
+
 		ctx := otel.GetTextMapPropagator().Extract(c.Request.Context(), propagation.HeaderCarrier(c.Request.Header))
 		ctx, span := t.Start(ctx, c.FullPath(), trace.WithSpanKind(trace.SpanKindServer))
 		defer span.End()
